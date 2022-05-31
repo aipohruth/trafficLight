@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins, sans-serif;
+}
+body{
+    background-color: rgb(44, 37, 37);
+}
+.box{
+    width: 120px;
+    background-color: #fff;
+    margin: 12% auto;
+    height: 350px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0,0.1);
+    border-radius: 20px;
+}
+h4{
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 18px;
+}
+.btn{
+    text-align: center;
+    height: 33px;
+    width: 50px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #22667a;
+    background-color: transparent;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 14px;
+   
+}
+.btn:hover{
+    background-color: #22667a;
+    border: 0;
+
+}
+.light-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    margin: 0px 5px;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 10px , 
+                inset 5px 5px 10px rgba(0, 0, 0, 0.16);
+    
+}
+.circle.red{
+    background-color: #f31d06;
+    box-shadow: 0 0 20px  #f31d06 ;
+}
+.circle.yellow{
+    background-color: #f6fa0c;
+    box-shadow: 0 0 20px #f6fa0c;
+}
+.circle.green{
+    background-color: #10e608;
+    box-shadow: 0 0 20px #10e608;
+}
+
