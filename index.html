@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Traffic Light</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+     rel="stylesheet">
+     <script src="https://kit.fontawesome.com/37c9d11c2e.js"></script>
+    </head>
+    <body>
+        <div class="box">
+            <h4>Traffic Lights</h4>
+            <div class="light-box">
+            <div  color = 'red'   class="circle red"></div><br>
+            <div  color = 'yellow' class="circle  "></div><br>
+            <div  color = 'green' class="circle  "></div><br>
+        </div>
+        <button onclick="startTraffic()" id="btn"  class="btn">Start</button>
+        </div>
+
+        <script>
+            var  circles = document.querySelectorAll('.circle');
+            var button = document.getElementById('btn');
+
+            function startTraffic(){
+                let activeLight = 0;
+                setInterval (changeLight, 1000);
+
+                function changeLight(){
+                    circles[activeLight].className = 'circle';
+                    activeLight ++;
+
+                    if(activeLight > 2){
+                        activeLight = 0;
+                    }
+                    let currentlight = circles[activeLight];
+                    currentlight.classList.add(currentlight.getAttribute('color'));
+                }
+            }
+        </script>
+
+
+
+  
+        </body>
+        </html>
+        
